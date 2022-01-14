@@ -6,7 +6,7 @@
 1. **Maitreyee Wairagkar** (Multiclass PCA_SVM based prediction model for CDR - Final Solution - accuracy 95.72%)
 2. **Nabila Rahman** (Association of different factors with standardised cognitive score + correlations of features)
 3. **Ana Lawry Aguila** (Associations between health, pollution and demographic measures with cognitive measures)
-4. **Aadarsh Gupta** (Exploring multiclass ensamble methods for classification)
+4. **Aadarsh Gupta** (Exploring multiclass ensemble methods for classification)
 5. **Jordan Moore** (Exploring deep neural network for classification)
 6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
 7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features)
