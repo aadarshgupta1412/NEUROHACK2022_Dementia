@@ -92,7 +92,7 @@ File **'Nabila-Exploratory_Analysis_LASI-DAD.md'** contains the **exploratory an
 First I selected and annotated 66 features that each summarises the individual tests performed in LASI-DAD. This includes cognitive scores, mini nutritional assessment, etc.
 
 In the Exploratory analysis, I used a typical method used for gene variation analysis to figure out which features are important. Here least squared regression is used to model each cognitive feature against each non-cognitive feature (cognition~x). Then the median R2 value is used to weight the importance of each non-cognitive feature.
-![Explanatory Variables](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-6-1.png]
+![Explanatory Variables](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-6-1.png)
 
 For Correlation plot, this was a simple Pearson's correlation test between each cognitive feature and non cognitive feature.
-![Correlation_Plot]https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-7-1.png]
+![Correlation_Plot](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-7-1.png])
