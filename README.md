@@ -65,3 +65,15 @@ The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysi
 **Author: Winnie Lei**
 
 'FAMD_Data_Exploration.py' is a FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation.csv' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_coordinates.csv' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
+
+## 8. Feature Selection and Exploratory Analyis of LASI-DAD
+ 
+**Author: Nabila**
+
+File **'Nabila-Exploratory_Analysis_LASI-DAD'** contains the **exploratory analysis and visualition** performed using the LASI-DAD data
+
+First I have selected and annotated 66 features that each summarises the individual tests performed in LASI-DAD. This includes cognitive scores, mini nutritional assessment, etc.
+
+In the Exploratory analysis, I used a typical method used for gene analysis of variance to figure out which features are important. Here least squared regression is used to model each cognitive feature against each non-cognitive feature. Then the median R2 value is used to weight the importance of each non-cognitive feature.
+
+For Correlation plot, this was a simple Pearson's correlation test between each cognitive feature and non cognitive feature.
