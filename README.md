@@ -11,6 +11,8 @@
 6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
 7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features + FAMD preliminary data exploration)
 
+## Project Title: A predictive model for dementia that overcomes the need for cohort harmonisation
+
 Details of our solution and description of individual contributions are given below in contents.
 
 ### Contents:
