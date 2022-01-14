@@ -9,7 +9,7 @@
 4. **Aadarsh Gupta** (Exploring multiclass ensemble methods for classification)
 5. **Jordan Moore** (Exploring deep neural network for classification)
 6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
-7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features)
+7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features + FAMD preliminary results)
 
 Details of our solution and description of individual contributions are given below in contents.
 
@@ -40,3 +40,7 @@ Implementation of Ensemble method (based on Voting Classifier) over 7 different 
 
 File "Preprocessing_FAMD_Impute" is an R script that requires the input mixed data (the LASI-DAD continuous and categorical data) to be separated into to continuous ("processed_continuous_data.csv") and categorical ("processed_categorical_data.csv") csv files. The missing values are imputed using the regularised iterative FAMD algorithm with 5 components. 
 
+## FAMD: FAMD data exploration
+**Author: Winnie (Cheng Wai) Lei**
+
+Using the regularised iterative FAMD algorithm with 3 components to find variables that have greater importance in the LASI-DAD data. Final results maybe used in the multiclass model as an alternative to the existing PCA data.
