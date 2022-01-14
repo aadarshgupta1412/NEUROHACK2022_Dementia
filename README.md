@@ -16,31 +16,51 @@ Details of our solution and description of individual contributions are given be
 ### Contents:
 
 ## 1. Complete Pipeline for Multiclass PCA+SVD based Model for Clinical Dementia Rating Prediction
+ 
 **Author: Maitreyee Wairagkar**
 
-File **'Multiclass-Prediction-Model-LASI-DAD'** contains the final solution with the entire pipeline for Machine Learning prediction model for classifying 5 CDR scores. This includes data preprocessing and cleaning, data visualisation and transformation using T-SNE, PCA, Histogram, training PCA+SVM based multiclass model, and detailed evaluation of this model. Average accuracy of CDR prediction on unseen testing data using this model is **95.72%**
+File **'Multiclass-Prediction-Model-LASI-DAD'** contains the **final solution** with the entire pipeline for Machine Learning prediction model for classifying 5 CDR scores. This includes data preprocessing and cleaning, data visualisation and transformation using T-SNE, PCA, Histogram, training PCA+SVM based multiclass model, and detailed evaluation of this model. Average accuracy of CDR prediction on unseen testing data using this model is **95.72%**
 
-Initially data was preprocessed to remove non-relevant features and features with missing values. The cleaned dataset was visualised using PCA as shown in Fig1. PCA components clearly show separate clusters for 5 CDR scores as shown in Fig 1a (colour coded). Fig 1b shows that the variance of these features has a fat tail distribution which means all principal components contribute to the variance and hence we used all principal components for classification of CDR. Fig 1c shows the histogram of original data with imbalanced classes which was upsampled to get equal number of samples in each class. 
+Initially data was preprocessed to remove non-relevant features and features with missing values. The cleaned dataset was visualised using PCA as shown in Fig1. PCA components clearly show separate clusters for 5 CDR scores as shown in Fig 1a (colour coded). Fig 1b shows that the variance of these features has a fat tail distribution which means all principal components contribute to the variance and hence we used all principal components for classification of CDR. Since PCA showed clear separable clusters with different CDR scores, SVM model was deemed to be suitable for classification of principal component based featyres. Fig 1c shows the histogram of original data with imbalanced classes which was upsampled to get equal number of samples in each class before training the model. 
+
 ![PCA of LASI-DAD features showing clear clusters according to CDR](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/PCA.png)
+
+Fig 2a shows the pipeline of our final solution - a PCA based multiclass SVM and detailed analysis of its performance. We tuned hyperparameters for SVM using Grid Search method with cross validation. Then we used 10-fold cross validation scheme to train and evaluate our multiclass SVM model. We used strong regularisation in SVM to avoid overfitting and weighted penalty in case of imbalanced classes. PCA was trained on training set within wach fold of cross-validation. The normalised principal components were used as the training data. Same PCA weights and normalisation weights that were trained on training set were used to obtain principal components for the testing set. Testing data was then used to predict CDR scores and evaluate the model performance. Fig 2b shows the confusion matrix for all five classes. We can see that all classes were discriminated with high accuracy. CDR of 0 and 0.5 (no dementia and questionable impairment) were confused with each other the most, however, confirmed dementia diagnosis were classified almost perfectly. Fig 2c shows precision, recall and f1-score for all classes. Precision, recall and f1-score are all similar indicating that the model shows equally high performance on both negative and positive samples of each class. Overall accuracy of the model on training data was 98.81% and final **accuracy for test data was 95.72%**. This suggests that PCA+SVM based model has a good potential for use in dementia diagnosis.       
 ![FinalSolution - Multiclass Model Pipeline and Results ](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/FinalSolution-Multiclass_ModelSVM.png)
 
-
 ## 2. NN Model for using (sub)feature set to predict dementia onset
+
 **Author: Jordan Moore**
 
 Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. NN tried due to wide dataset, but issues on vectorisation due to unusual encoding of the features that needs to be examined
 
+
 ## 3. Multi-modal Ensemble method for Dementia Level classification
+
 **Author: Aadarsh Gupta**
 
-Implementation of Ensemble method (based on Voting Classifier) over 7 different Machine learning algorithms, after extensive pre-processing of data and choice of important features based on demographic, health and cognitive measures. The classifiers explored: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naive Bayes and SVM; Emphasis on impact of label encoded features over raw values for each algorithm. Ensemble method accuracy : 78.9%. 
+Implementation of Ensemble method (based on Voting Classifier) over 7 different Machine learning algorithms, after extensive pre-processing of data and choice of important features based on demographic, health and cognitive measures. The classifiers explored: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naïve Bayes and SVM; Emphasis on impact of label encoded features over raw values for each algorithm. Ensemble method accuracy : 78.9%.
 
-## Others: Preprocessing -- Missing data imputation using the regularised iterative FAMD algorithm
+## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm
+
 **Author: Winnie (Cheng Wai) Lei**
 
 File "Preprocessing_FAMD_Impute" is an R script that requires the input mixed data (the LASI-DAD continuous and categorical data) to be separated into to continuous ("processed_continuous_data.csv") and categorical ("processed_categorical_data.csv") csv files. The missing values are imputed using the regularised iterative FAMD algorithm with 5 components. 
 
-## FAMD: FAMD data exploration
+
+## 5. Multiview analysis of Cognitive features with demographics, health and pollution features
+
+**Author: Ana Lawry Aguila**
+
+The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysis considering a subset of the LASI-DAD data as two data views: a cognitive dataset, and a health, demographics and pollution dataset. We explore the associative effect between these two data views and provide an analysis of feature importance. We show that by viewing the dataset in this way, we find PLS projections that generalise to test data and reflect disease severity. This initial exploration of PLS could be extended in future work. For example, using the PLS components rather than PCA components as input for the classification model discussed in 1). 
+
+## 6. A Systematic Literature Review on "Dementia" and "LASI-DAD" through Scopus Database along with Twitter Analytics for feature enahancement of ML-based model
+
+**Author: Pooja Sarin**
+
+184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and aanlysed to understand the discussions surrounding "Dementia" on Social Media. 
+
+## 7. LASI-DAD feature exploration with Factor Analysis of Mixed Data
 **Author: Winnie (Cheng Wai) Lei**
 
-Using the regularised iterative FAMD algorithm with 3 components to find variables that have greater importance in the LASI-DAD data. Final results maybe used in the multiclass model as an alternative to the existing PCA data.
+Using the regularised iterative FAMD algorithm with 3 components to find variables that have greater importance in the LASI-DAD data. Final results maybe used in the multiclass model as an alternative to the existing input data (PCA).
