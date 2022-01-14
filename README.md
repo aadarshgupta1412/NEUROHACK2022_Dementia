@@ -3,13 +3,13 @@
 ## Team Name: NaNs
 
 ### Team Members:
-**1. Maitreyee Wairagkar**
-**2. Nabila Rehaman**
-**3. Ana Lawry Aguila** 
-**4. Aadarsh Gupta**
-**5. Jordan Moore**
-**6. Pooja Sarin** 
-**7. Winnie (Cheng Wai) Lei** 
+1. **Maitreyee Wairagkar**
+2. **Nabila Rehaman**
+3. **Ana Lawry Aguila** 
+4. **Aadarsh Gupta**
+5. **Jordan Moore**
+6. **Pooja Sarin** 
+7. **Winnie (Cheng Wai) Lei** 
 
 ### Contents:
 
