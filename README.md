@@ -4,7 +4,7 @@
 
 ### Team Members:
 1. **Maitreyee Wairagkar**
-2. **Nabila Rehaman**
+2. **Nabila Rahman**
 3. **Ana Lawry Aguila** 
 4. **Aadarsh Gupta**
 5. **Jordan Moore**
