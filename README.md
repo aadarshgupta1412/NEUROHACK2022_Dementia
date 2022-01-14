@@ -87,10 +87,10 @@ Figures 2 and 3 show the first set of PLS weights for the two datasets. These we
  
 **Author: Nabila**
 
-File **'Nabila-Exploratory_Analysis_LASI-DAD'** contains the **exploratory analysis and visualition** performed using the LASI-DAD data
+File **'Nabila-Exploratory_Analysis_LASI-DAD.md'** contains the **exploratory analysis and visualition** performed using the LASI-DAD data
 
-First I have selected and annotated 66 features that each summarises the individual tests performed in LASI-DAD. This includes cognitive scores, mini nutritional assessment, etc.
+First I selected and annotated 66 features that each summarises the individual tests performed in LASI-DAD. This includes cognitive scores, mini nutritional assessment, etc.
 
-In the Exploratory analysis, I used a typical method used for gene analysis of variance to figure out which features are important. Here least squared regression is used to model each cognitive feature against each non-cognitive feature. Then the median R2 value is used to weight the importance of each non-cognitive feature.
+In the Exploratory analysis, I used a typical method used for gene variation analysis to figure out which features are important. Here least squared regression is used to model each cognitive feature against each non-cognitive feature (cognition~x). Then the median R2 value is used to weight the importance of each non-cognitive feature.
 
 For Correlation plot, this was a simple Pearson's correlation test between each cognitive feature and non cognitive feature.
