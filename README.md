@@ -65,7 +65,7 @@ Figures 2 and 3 show the first set of PLS weights for the two datasets. These we
 
 **Author: Pooja Sarin**
 
-184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and aanlysed to understand the discussions surrounding "Dementia" on Social Media. 
+184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and analysed to understand the discussions surrounding "Dementia" on Social Media. 
 
 
 ## 7. Preliminary data exploration using factor analysis of mixed data
