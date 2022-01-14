@@ -44,9 +44,9 @@ The confusion matrix for the ensemble method obtained is :
 ![Confusion-matrix](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Confusion-matrix.png)
 The important features and their relative composition in determining clinical rating for:
  - Decision Tree Classifier: 
-![Feature importance based on Decision-tree classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Decision-tree-features.png)
+![Feature importance based on Decision-Tree classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Decision-tree-features.png)
  - Random Forest Classifier: 
-![Feature importance based on Random-forest classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Random-forest-features.png)
+![Feature importance based on Random-Forest classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Random-forest-features.png)
 
 ## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm
 
