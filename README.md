@@ -55,11 +55,13 @@ The important features and their relative composition in determining clinical ra
 
 ![Feature importance based on Random-Forest classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Random-forest-features.png)
 
-## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm
+## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm and data exploration using factor analysis of mixed data
 
 **Author: Winnie (Cheng Wai) Lei**
 
 File "Preprocessing_FAMD_Impute" is an R script that requires the input mixed data (the LASI-DAD continuous and categorical data) to be separated into to continuous ("processed_continuous_data.csv") and categorical ("processed_categorical_data.csv") csv files. The missing values are imputed using the regularised iterative FAMD algorithm with 5 components. 
+
+'FAMD_Data_Exploration.py' is a FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation.csv' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_coordinates.csv' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
 
 ## 5. Multiview analysis of Cognitive features with demographics, health and pollution features
 
@@ -81,14 +83,7 @@ Figures 2 and 3 show the first set of PLS weights for the two datasets. These we
 
 184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and analysed to understand the discussions surrounding "Dementia" on Social Media. 
 
-
-## 7. Preliminary data exploration using factor analysis of mixed data
-
-**Author: Winnie Lei**
-
-'FAMD_Data_Exploration.py' is a FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation.csv' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_coordinates.csv' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
-
-## 8. Feature Selection and Exploratory Analyis of LASI-DAD
+## 7. Feature Selection and Exploratory Analyis of LASI-DAD
  
 **Author: Nabila**
 
