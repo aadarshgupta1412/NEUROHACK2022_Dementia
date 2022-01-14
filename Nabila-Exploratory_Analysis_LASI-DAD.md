@@ -8,10 +8,132 @@ Nabila Rahman
 ``` r
 # Libraries
 library(data.table)
+```
+
+    ## data.table 1.14.0 using 10 threads (see ?getDTthreads).  Latest news: r-datatable.com
+
+``` r
 library(devtools)
+```
+
+    ## Loading required package: usethis
+
+``` r
 library(ggplot2)
 library(scater)
+```
+
+    ## Loading required package: SingleCellExperiment
+
+    ## Loading required package: SummarizedExperiment
+
+    ## Loading required package: MatrixGenerics
+
+    ## Loading required package: matrixStats
+
+    ## 
+    ## Attaching package: 'MatrixGenerics'
+
+    ## The following objects are masked from 'package:matrixStats':
+    ## 
+    ##     colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    ##     colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    ##     colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    ##     colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    ##     colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    ##     colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    ##     colWeightedMeans, colWeightedMedians, colWeightedSds,
+    ##     colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    ##     rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    ##     rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    ##     rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    ##     rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    ##     rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    ##     rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    ##     rowWeightedSds, rowWeightedVars
+
+    ## Loading required package: GenomicRanges
+
+    ## Loading required package: stats4
+
+    ## Loading required package: BiocGenerics
+
+    ## Loading required package: parallel
+
+    ## 
+    ## Attaching package: 'BiocGenerics'
+
+    ## The following objects are masked from 'package:parallel':
+    ## 
+    ##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    ##     clusterExport, clusterMap, parApply, parCapply, parLapply,
+    ##     parLapplyLB, parRapply, parSapply, parSapplyLB
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     IQR, mad, sd, var, xtabs
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    ##     dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    ##     grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    ##     order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    ##     rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    ##     union, unique, unsplit, which.max, which.min
+
+    ## Loading required package: S4Vectors
+
+    ## 
+    ## Attaching package: 'S4Vectors'
+
+    ## The following objects are masked from 'package:data.table':
+    ## 
+    ##     first, second
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     expand.grid, I, unname
+
+    ## Loading required package: IRanges
+
+    ## 
+    ## Attaching package: 'IRanges'
+
+    ## The following object is masked from 'package:data.table':
+    ## 
+    ##     shift
+
+    ## Loading required package: GenomeInfoDb
+
+    ## Loading required package: Biobase
+
+    ## Welcome to Bioconductor
+    ## 
+    ##     Vignettes contain introductory material; view with
+    ##     'browseVignettes()'. To cite Bioconductor, see
+    ##     'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+    ## 
+    ## Attaching package: 'Biobase'
+
+    ## The following object is masked from 'package:MatrixGenerics':
+    ## 
+    ##     rowMedians
+
+    ## The following objects are masked from 'package:matrixStats':
+    ## 
+    ##     anyMissing, rowMedians
+
+    ## Loading required package: scuttle
+
+``` r
 library(corrplot)
+```
+
+    ## corrplot 0.90 loaded
+
+``` r
 workDir <- "/scratch/c.mpmnr/00_NEUROHACK"
 
 # Import Raw LASI-DAD matrix
@@ -162,124 +284,8 @@ for (coln in setfactor) {
 for (coln in colnames(mat)) {
   if (! class(mat[,coln]) %in% c("factor", "character") ) {
     mat[,coln] <- scale(mat[,coln])
-    message("Scaling ", coln)
   }
 }
-```
-
-    ## Scaling age
-
-    ## Scaling educyrs
-
-    ## Scaling env_noise
-
-    ## Scaling env_odor
-
-    ## Scaling env_air
-
-    ## Scaling env_house
-
-    ## Scaling orientation
-
-    ## Scaling executive_function
-
-    ## Scaling lang_fluency
-
-    ## Scaling memory
-
-    ## Scaling visuospatial
-
-    ## Scaling memory_immediate_episodic
-
-    ## Scaling memory_delayed_episodic
-
-    ## Scaling memory_recognition
-
-    ## Scaling abstract_reasoning
-
-    ## Scaling attention_speed
-
-    ## Scaling general_cognition_score
-
-    ## Scaling hmse_score
-
-    ## Scaling word_list_learning_immediate
-
-    ## Scaling list_learning_delayed
-
-    ## Scaling word_list_recognition
-
-    ## Scaling logical_memory_recognition
-
-    ## Scaling logical_memory_immediate
-
-    ## Scaling logical_memory_delayed
-
-    ## Scaling verbal_fluency
-
-    ## Scaling csid_score
-
-    ## Scaling ravens_test
-
-    ## Scaling total_std_cog_score
-
-    ## Scaling hearing_seeing_any_diff
-
-    ## Scaling sleep_lastnight
-
-    ## Scaling systolic_avg
-
-    ## Scaling diastolic_avg
-
-    ## Scaling pulse
-
-    ## Scaling high_blood_pressure
-
-    ## Scaling BMI
-
-    ## Scaling total_adl_difficult
-
-    ## Scaling total_iadl_difficult
-
-    ## Scaling CESD_poor_mental_health
-
-    ## Scaling anxiety
-
-    ## Scaling nutrition_assessment
-
-    ## Scaling total_spice_eaten
-
-    ## Scaling hearing_right_ear
-
-    ## Scaling hearing_left_ear
-
-    ## Scaling hearing_wear_aids
-
-    ## Scaling PRS_lambert
-
-    ## Scaling PRS_kunkle
-
-    ## Scaling PRS_jansen
-
-    ## Scaling PRS_davies
-
-    ## Scaling gen_PCA1
-
-    ## Scaling gen_PCA2
-
-    ## Scaling gen_PCA3
-
-    ## Scaling gen_PCA4
-
-    ## Scaling gen_PCA5
-
-    ## Scaling PRS_rs7412
-
-    ## Scaling PRS_rs429358
-
-    ## Scaling consensus_score_final
-
-``` r
 scaledMat <- mat
 ```
 
@@ -329,6 +335,14 @@ dev.off()
 
     ## png 
     ##   2
+
+``` r
+print(expPlot)
+```
+
+    ## Warning: Removed 22 rows containing non-finite values (stat_density).
+
+![](Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 # Visualise Correlation Matrix of all features
 
