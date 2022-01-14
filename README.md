@@ -41,7 +41,7 @@ Implementation of 2 layer model done in Pytorch. Data input and vectorisation ne
 
 Implementation of Ensemble method (based on Voting Classifier) over 7 different Machine learning algorithms, after extensive pre-processing of data and choice of important features based on demographic, health and cognitive measures. The classifiers explored: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naïve Bayes and SVM; Emphasis on impact of label encoded features over raw values for each algorithm. Ensemble method accuracy : 78.9%.
 
-## 4. Others: Preprocessing -- Missing data imputation using the regularised iterative FAMD algorithm
+## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm
 
 **Author: Winnie (Cheng Wai) Lei**
 
