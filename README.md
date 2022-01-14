@@ -19,6 +19,7 @@ Details of our solution and description of individual contributions are given be
 **Author: Maitreyee Wairagkar**
 File **'Multiclass-Prediction-Model-LASI-DAD'** contains the entire pipeline for Machine Learning prediction model for classifying 5 CDR scores. This includes data preprocessing and cleaning, data visualisation and transformation using T-SNE, PCA, Histogram, training PCA+SVM based multiclass model, and detailed evaluation of this model. Average accuracy of CDR prediction on unseen testing data using this model is **95.72%**
 ![PCA of LASI-DAD features showing clear clusters according to CDR](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/PCA.png)
+![FinalSolution - Multiclass Model Pipeline and Results ](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/FinalSolution-Multiclass_ModelSVM.png)
 
 
 ## 2. NN Model for using (sub)feature set to predict dementia onset
