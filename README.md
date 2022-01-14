@@ -20,7 +20,7 @@ File 'Multiclass-Prediction-Model-LASI-DAD' contains the entire pipeline for Mac
 
 ## 2. NN Model for using (sub)feature set to predict dementia onset
 
-Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. 
+Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. NN tried due to wide dataset, but issues on vectorisation due to unusual encoding of the features that needs to be examined
 **Author: Jordan Moore**
 
 
