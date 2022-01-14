@@ -47,10 +47,17 @@ Implementation of Ensemble method (based on Voting Classifier) over 7 different 
 
 File "Preprocessing_FAMD_Impute" is an R script that requires the input mixed data (the LASI-DAD continuous and categorical data) to be separated into to continuous ("processed_continuous_data.csv") and categorical ("processed_categorical_data.csv") csv files. The missing values are imputed using the regularised iterative FAMD algorithm with 5 components. 
 
-## 5. A Systematic Literature Review on "Dementia" and "LASI-DAD" through Scopus Database along with Twitter Analytics for feature enahancement of ML-based model
+## 5. Multiview analysis of Cognitive features with demographics, health and pollution features
+
+**Author: Ana Lawry Aguila**
+
+The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysis considering a subset of the LASI-DAD data as two data views: a cognitive dataset, and a health, demographics and pollution dataset. We explore the associative effect between these two data views and provide an analysis of feature importance. We show that by viewing the dataset in this way, we find PLS projections that generalise to test data and reflect disease severity. This initial exploration of PLS could be extended in future work. For example, using the PLS components rather than PCA components as input for the classification model discussed in 1). 
+
+## 6. A Systematic Literature Review on "Dementia" and "LASI-DAD" through Scopus Database along with Twitter Analytics for feature enahancement of ML-based model
 
 **Author: Pooja Sarin**
 
 184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and aanlysed to understand the discussions surrounding "Dementia" on Social Media. 
+
 
 
