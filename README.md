@@ -64,4 +64,4 @@ The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysi
 
 **Author: Winnie Lei**
 
-A FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_column_correlations' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
+'FAMD_Data_Exploration.py' is a FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation.csv' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_coordinates.csv' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
