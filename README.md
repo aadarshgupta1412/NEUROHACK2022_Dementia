@@ -6,7 +6,7 @@
 1. **Maitreyee Wairagkar** (Multiclass PCA_SVM based prediction model for CDR - Final Solution - accuracy 95.72%)
 2. **Nabila Rahman** (Association of different factors with standardised cognitive score + correlations of features)
 3. **Ana Lawry Aguila** (Associations between health, pollution and demographic measures with cognitive measures)
-4. **Aadarsh Gupta** (Exploring multiclass ensamble methods for classification)
+4. **Aadarsh Gupta** (Exploring multiclass ensemble methods for classification)
 5. **Jordan Moore** (Exploring deep neural network for classification)
 6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
 7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features)
@@ -30,6 +30,10 @@ Initially data was preprocessed to remove non-relevant features and features wit
 
 Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. NN tried due to wide dataset, but issues on vectorisation due to unusual encoding of the features that needs to be examined
 
+## 3. Multi-modal Ensemble method for Dementia Level classification
+
+Implementation of Ensemble method (based on Voting Classifier) over 7 different Machine learning algorithms, after extensive pre-processing of data and choice of important features based on demographic, health and cognitive measures. The classifiers explored: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naive Bayes and SVM; Emphasis on impact of label encoded features over raw values for each algorithm. Ensemble method accuracy : 78.9%. 
+**Author: Aadarsh Gupta**
 
 ## Others: Preprocessing -- Missing data imputation using the regularised iterative FAMD algorithm
 **Author: Winnie (Cheng Wai) Lei**
