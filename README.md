@@ -9,7 +9,7 @@
 4. **Aadarsh Gupta** (Exploring multiclass ensemble methods for classification)
 5. **Jordan Moore** (Exploring deep neural network for classification)
 6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
-7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features)
+7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features + FAMD preliminary data exploration)
 
 Details of our solution and description of individual contributions are given below in contents.
 
@@ -60,4 +60,8 @@ The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysi
 184 final stage journal articles identified out of more than 2 lakh total documents in the repository with major focus on Machine Learning, Deep Learning, Forecasting, Convolution Neural Network based techniques for Dementia Prediction. Also, there are total of 10 published papers on LASI-DAD on Scopus till date. Further, aprroximately 65K recent tweets through Twitter API are extracted and aanlysed to understand the discussions surrounding "Dementia" on Social Media. 
 
 
+## 7. Preliminary data exploration using factor analysis of mixed data
 
+**Author: Winnie Lei**
+
+A FAMD based analysis using 3 factors to identify key features in the raw data and the processed data (both imputed with the regularised iterative FAMD algorithmn). 'FAMD_Processed_column_correlation' shows similar key features have been identified in the PCA and PLS analysis. 'FAMD_Processed_column_correlations' shows the calculated principal components that maybe used instead of the PCA input in the final multi-class model.
