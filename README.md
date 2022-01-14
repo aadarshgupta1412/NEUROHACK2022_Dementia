@@ -3,13 +3,13 @@
 ## Team Name: NaNs
 
 ### Team Members:
-1. **Maitreyee Wairagkar**
-2. **Nabila Rahman**
-3. **Ana Lawry Aguila** 
-4. **Aadarsh Gupta**
-5. **Jordan Moore**
-6. **Pooja Sarin** 
-7. **Winnie (Cheng Wai) Lei** 
+1. **Maitreyee Wairagkar** (Multiclass PCA_SVM based prediction model for CDR - Final Solution - accuracy 95.72%)
+2. **Nabila Rahman** (Association of different factors with standardised cognitive score + correlations of features)
+3. **Ana Lawry Aguila** (Associations between health, pollution and demographic measures with cognitive measures)
+4. **Aadarsh Gupta** (Exploring multiclass ensamble methods for classification)
+5. **Jordan Moore** (Exploring deep neural network for classification)
+6. **Pooja Sarin** (Social media analysis and scientific literature review of features critical for dementia)
+7. **Winnie (Cheng Wai) Lei** (Preprocessing data - imputing missing value features)
 
 ### Contents:
 
@@ -22,11 +22,6 @@ File 'Multiclass-Prediction-Model-LASI-DAD' contains the entire pipeline for Mac
 
 Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. NN tried due to wide dataset, but issues on vectorisation due to unusual encoding of the features that needs to be examined
 **Author: Jordan Moore**
-
-## 3. Multi-modal Ensemble Method for dementia rating prediction
- 
-Implementation of Ensemble Method (based on Voting Classifier) over 7 different Machine learning algorithms after extensive pre-processing of data and choice of important features to be considered based on demographic, health and cognitive measures. The algorithms shown are: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naive Bayes and SVM. Implementation also emphasizes on impact caused by label encoded features over raw data values for each classifier. 
-**Author: Aadarsh Gupta**
 
 ## Others: Preprocessing -- Missing data imputation using the regularised iterative FAMD algorithm
 
