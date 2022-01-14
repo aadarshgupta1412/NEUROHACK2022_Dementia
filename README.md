@@ -95,4 +95,4 @@ In the Exploratory analysis, I used a typical method used for gene variation ana
 ![Explanatory Variables](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-6-1.png)
 
 For Correlation plot, this was a simple Pearson's correlation test between each cognitive feature and non cognitive feature.
-![Correlation_Plot](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-7-1.png])
+![Correlation_Plot](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Nabila-Exploratory_Analysis_LASI-DAD_files/figure-gfm/unnamed-chunk-7-1.png)
