@@ -18,6 +18,9 @@
 File 'Multiclass-Prediction-Model-LASI-DAD' contains the entire pipeline for Machine Learning prediction model for classifying 5 CDR scores. This includes data preprocessing and cleaning, data visualisation and transformation using T-SNE, PCA, Histogram, training PCA+SVM based multiclass model, and detailed evaluation of this model. Average accuracy of CDR prediction on unseen testing data using this model is 95.72%   
 **Author: Maitreyee Wairagkar**
 
+## 2. NN Model for using (sub)feature set to predict dementia onset
 
+Implementation of 2 layer model done in Pytorch. Data input and vectorisation needs completing. 
+**Author: Jordan Moore**
 
 
