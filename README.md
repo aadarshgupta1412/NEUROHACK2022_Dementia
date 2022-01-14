@@ -41,11 +41,16 @@ Implementation of 2 layer model done in Pytorch. Data input and vectorisation ne
 
 Implementation of Ensemble method (based on Voting Classifier) over 7 different Machine learning algorithms, after extensive pre-processing of data and choice of important features based on demographic, health and cognitive measures. The classifiers explored: Logistic Regression, LDA, K-Neighbors Classifier, Decision Tree Classifier, Random Forest Classifier, Gaussian Naïve Bayes and SVM; Emphasis on impact of label encoded features over raw values for each algorithm. Ensemble method accuracy : 78.9%.
 The confusion matrix for the ensemble method obtained is :
+
 ![Confusion-matrix](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Confusion-matrix.png)
+
 The important features and their relative composition in determining clinical rating for:
  - Decision Tree Classifier: 
+
 ![Feature importance based on Decision-Tree classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Decision-tree-features.png)
+
  - Random Forest Classifier: 
+
 ![Feature importance based on Random-Forest classifier](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/Random-forest-features.png)
 
 ## 4. Preprocessing - Missing data imputation using the regularised iterative FAMD algorithm
