@@ -53,6 +53,14 @@ File "Preprocessing_FAMD_Impute" is an R script that requires the input mixed da
 
 The notebook 'PLS_analysis.ipynb' contains a partial least squares (PLS) analysis considering a subset of the LASI-DAD data as two data views: a cognitive dataset, and a health, demographics and pollution dataset. We explore the associative effect between these two data views and provide an analysis of feature importance. We show that by viewing the dataset in this way, we find PLS projections that generalise to test data and reflect disease severity. This initial exploration of PLS could be extended in future work. For example, using the PLS components rather than PCA components as input for the classification model discussed in 1). 
 
+Figure 1 shows the first PLS components projected onto the test data. We can see some stratification by disease severity suggesting that the strongest association between the two datasets is in part driven by disease effects.
+
+![PLS projections](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/PLS_projections.png)
+
+Figures 2 and 3 show the first set of PLS weights for the two datasets. These weight vectors can be directly interpreted as feature importance and give us an idea of which features contribute to an associative effect.
+![xweights](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/xweights.png)
+![yweights](https://github.com/DEMON-NEUROHACK/Challenge-2-London-Team-E/blob/main/yweights.png)
+
 ## 6. A Systematic Literature Review on "Dementia" and "LASI-DAD" through Scopus Database along with Twitter Analytics for feature enahancement of ML-based model
 
 **Author: Pooja Sarin**
